@@ -1,90 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A simple career exploration tool for students in grades 9–12." />
-  <title>PathFinder — Career Guidance Companion</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project OyeHoye — Career & Pathway Explorer</title>
+    <meta name="description"
+        content="Explore career pathways, discover roles matching your interests and strengths, and take actionable next steps toward your future.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <a class="brand" href="#" aria-label="PathFinder home"><span class="brand-mark">P</span> PathFinder</a>
-    <nav><a href="#how-it-works">How it works</a><a href="#explore">Explore careers</a><a href="#about">For schools</a></nav>
-    <a class="header-cta" href="#quiz">Start exploring</a>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">CAREER CLARITY FOR GRADES 9–12</p>
-        <h1>Your future is a journey.<br><span>Start with what interests you.</span></h1>
-        <p class="hero-text">Explore career directions that match your interests and strengths. Get simple explanations and practical next steps—without choosing a career just because of marks or peer pressure.</p>
-        <div class="hero-actions"><a class="button primary" href="#quiz">Find my career directions <span>→</span></a><a class="text-link" href="#how-it-works">See how it works</a></div>
-        <div class="trust-row"><span>✓ Student-friendly</span><span>✓ Easy to understand</span><span>✓ Explore, don’t label</span></div>
-      </div>
-      <div class="hero-card" aria-label="Career exploration preview">
-        <div class="card-top"><span class="dot"></span><span class="dot yellow"></span><span class="dot blue"></span><span class="preview-label">YOUR EXPLORATION MAP</span></div>
-        <div class="orbit">
-          <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div>
-          <div class="orbit-center"><span>YOU</span><small>Interests + strengths</small></div>
-          <div class="orbit-tag tag-one">💻 Technology</div><div class="orbit-tag tag-two">🧠 Psychology</div><div class="orbit-tag tag-three">🎨 Design</div><div class="orbit-tag tag-four">🌱 Environment</div>
-        </div>
-        <p class="preview-note">A starting point for discovery—not a final decision.</p>
-      </div>
-    </section>
+    <!-- Site Navigation Header -->
+    <header class="site-header">
+        <a href="#" class="brand" aria-label="Project OyeHoye Home">
+            <span class="brand-mark">✦</span>
+            <span>OyeHoye</span>
+        </a>
+        <nav aria-label="Main Navigation">
+            <a href="#steps">How It Works</a>
+            <a href="#quiz">Explore Paths</a>
+            <a href="#careers">Career Areas</a>
+            <a href="#schools">For Schools</a>
+        </nav>
+        <a href="#quiz" class="header-cta">Take Quiz</a>
+    </header>
 
-    <section class="section how" id="how-it-works">
-      <div class="section-heading"><p class="eyebrow">A SIMPLE PROCESS</p><h2>From confusion to a next step.</h2><p>Small steps can make career decisions feel less overwhelming.</p></div>
-      <div class="steps-grid">
-        <article class="step-card"><span class="step-number">01</span><div class="step-icon">🧭</div><h3>Know yourself</h3><p>Reflect on what you enjoy, what you do well, and what matters to you.</p></article>
-        <article class="step-card"><span class="step-number">02</span><div class="step-icon">🔎</div><h3>Explore options</h3><p>Discover broad career areas and learn what people in those fields do.</p></article>
-        <article class="step-card"><span class="step-number">03</span><div class="step-icon">🪜</div><h3>Plan a next step</h3><p>Try a project, speak to a teacher, or research a subject pathway.</p></article>
-      </div>
-    </section>
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div>
+                <p class="eyebrow">Career & Pathway Exploration</p>
+                <h1>Discover what sparks <span>your future</span>.</h1>
+                <p class="hero-text">
+                    Explore career pathways, match your genuine interests with real-world roles, and take confident,
+                    practical steps toward your goals.
+                </p>
+                <div class="hero-actions">
+                    <a href="#quiz" class="button primary">Start Exploration <span>→</span></a>
+                    <a href="#steps" class="text-link">See how it works <span>→</span></a>
+                </div>
+                <div class="trust-row">
+                    <span>✓ Research-backed pathways</span>
+                    <span>✓ Zero pressure or rankings</span>
+                    <span>✓ 100% free for students</span>
+                </div>
+            </div>
 
-    <section class="section quiz-section" id="quiz">
-      <div class="quiz-intro"><p class="eyebrow">YOUR FIRST EXPLORATION</p><h2>What are you curious about?</h2><p>Choose the areas that sound interesting. There are no right or wrong answers.</p><div class="privacy-note">🔒 This demo runs in your browser and does not send your answers to a server.</div></div>
-      <form id="interest-form" class="quiz-panel">
-        <fieldset><legend>1. Which activities would you enjoy?</legend>
-          <label class="choice"><input type="checkbox" name="interest" value="technology"><span>Building apps, solving logic problems, or exploring technology</span></label>
-          <label class="choice"><input type="checkbox" name="interest" value="people"><span>Understanding people, teaching, or helping others</span></label>
-          <label class="choice"><input type="checkbox" name="interest" value="creative"><span>Designing, writing, making videos, or creating things</span></label>
-          <label class="choice"><input type="checkbox" name="interest" value="science"><span>Investigating how nature, health, or the world works</span></label>
-          <label class="choice"><input type="checkbox" name="interest" value="business"><span>Starting projects, planning, selling, or leading a team</span></label>
-          <label class="choice"><input type="checkbox" name="interest" value="practical"><span>Building, repairing, growing, or working hands-on</span></label>
-        </fieldset>
-        <fieldset><legend>2. What kind of task sounds most satisfying?</legend>
-          <label class="choice"><input type="radio" name="strength" value="analytical" required><span>Finding patterns and solving a difficult problem</span></label>
-          <label class="choice"><input type="radio" name="strength" value="supportive"><span>Explaining something clearly or supporting a person</span></label>
-          <label class="choice"><input type="radio" name="strength" value="creative"><span>Making an original idea or design</span></label>
-          <label class="choice"><input type="radio" name="strength" value="organised"><span>Organising people, time, or resources to reach a goal</span></label>
-        </fieldset>
-        <button class="button primary full" type="submit">Show my exploration ideas <span>→</span></button>
-        <p class="form-hint">You can select more than one interest. Results are suggestions to explore, not a test or diagnosis.</p>
-      </form>
-      <div id="results" class="results-panel" aria-live="polite" hidden></div>
-    </section>
+            <!-- Interactive Pathway Radar Hero Card -->
+            <div class="hero-card" aria-label="Pathway Visualization Card">
+                <div class="card-top">
+                    <span class="dot"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot blue"></span>
+                    <span class="preview-label">LIVE PATHWAY RADAR</span>
+                </div>
+                <div class="orbit">
+                    <div class="orbit-ring ring-one"></div>
+                    <div class="orbit-ring ring-two"></div>
+                    <div class="orbit-center">
+                        <span>YOU</span>
+                        <small>Interests & Strengths</small>
+                    </div>
+                    <div class="orbit-tag tag-one">💻 Technology & Data</div>
+                    <div class="orbit-tag tag-two">🎨 Creative Fields</div>
+                    <div class="orbit-tag tag-three">🔬 Science & Earth</div>
+                    <div class="orbit-tag tag-four">🤝 People & Society</div>
+                </div>
+                <p class="preview-note">Visualizing interconnected paths for high school & university students</p>
+            </div>
+        </section>
 
-    <section class="section career-section" id="explore">
-      <div class="section-heading"><p class="eyebrow">CAREER AREAS</p><h2>There is more than one path.</h2><p>Start broad. Learn about subjects, skills, training, and day-to-day work before deciding.</p></div>
-      <div class="career-grid">
-        <article class="career-card"><div class="career-icon purple">⌘</div><h3>Technology & data</h3><p>Software, cybersecurity, data analysis, AI, IT support.</p><span>Try: build a tiny webpage</span></article>
-        <article class="career-card"><div class="career-icon orange">♡</div><h3>People & society</h3><p>Psychology, education, social work, public services.</p><span>Try: interview someone about their work</span></article>
-        <article class="career-card"><div class="career-icon blue">✦</div><h3>Creative fields</h3><p>Design, animation, writing, media, communication.</p><span>Try: create a poster or short story</span></article>
-        <article class="career-card"><div class="career-icon green">⌁</div><h3>Science & environment</h3><p>Research, health-related fields, agriculture, sustainability.</p><span>Try: investigate a local issue</span></article>
-        <article class="career-card"><div class="career-icon yellow">↗</div><h3>Business & leadership</h3><p>Marketing, entrepreneurship, finance, operations.</p><span>Try: plan a small school event</span></article>
-        <article class="career-card"><div class="career-icon pink">⚒</div><h3>Practical & skilled work</h3><p>Engineering technology, trades, manufacturing, technical services.</p><span>Try: make or repair something safely</span></article>
-      </div>
-    </section>
+        <!-- How It Works Section -->
+        <section class="section" id="steps">
+            <div class="section-heading">
+                <p class="eyebrow">Three Simple Steps</p>
+                <h2>How OyeHoye guides your journey</h2>
+                <p>No confusing jargon, no algorithmic locks. Just an open space to explore subjects and careers at your
+                    own pace.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">01</span>
+                    <div class="step-icon">🎯</div>
+                    <h3>Select Interests</h3>
+                    <p>Choose activities, subjects, and hobbies that genuinely spark your curiosity and engagement.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">02</span>
+                    <div class="step-icon">💡</div>
+                    <h3>Discover Pathways</h3>
+                    <p>Unpack connected domains, study requirements, and industry landscapes matching your strengths.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">03</span>
+                    <div class="step-icon">🚀</div>
+                    <h3>Take Action</h3>
+                    <p>Get actionable, bite-sized next steps to explore before committing to courses or degrees.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="school-banner" id="about">
-      <div><p class="eyebrow">BUILT FOR SCHOOL COMMUNITIES</p><h2>Career conversations should be accessible to every student.</h2><p>Schools can use PathFinder as a starting point for career-awareness sessions, classroom activities, and conversations with teachers and families.</p></div>
-      <div class="school-points"><p>✓ Short classroom-friendly activities</p><p>✓ Clear, student-friendly language</p><p>✓ Encourages discussion with trusted adults</p><p>✓ Can be adapted to local study pathways</p><a class="button light" href="mailto:hello@example.com?subject=PathFinder%20school%20pilot">Discuss a school pilot →</a><small>Demo contact link—replace with your real email before publishing.</small></div>
-    </section>
-  </main>
+        <!-- Quiz Section -->
+        <section class="quiz-section" id="quiz">
+            <div class="quiz-intro">
+                <p class="eyebrow">Interest Explorer</p>
+                <h2>Find roles aligned with how you think</h2>
+                <p>Select what excites you and your natural problem-solving strengths. We’ll suggest practical career
+                    clusters and immediate activities to try.</p>
+                <div class="privacy-note">
+                    🔒 <strong>Your privacy matters:</strong> No account required, no personal data saved. All matching
+                    runs directly in your browser.
+                </div>
+            </div>
 
-  <footer><a class="brand" href="#"><span class="brand-mark">P</span> PathFinder</a><p>Explore thoughtfully. Decide with support.</p><p class="footer-note">This prototype offers general career exploration only. It does not guarantee outcomes or replace qualified career counselling.</p></footer>
-  <script src="script.js"></script>
+            <!-- Quiz Form -->
+            <form class="quiz-panel" id="interest-form">
+                <fieldset>
+                    <legend>1. What areas or activities spark your interest? (Choose one or more)</legend>
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="technology">
+                        <span><strong>Technology & Data</strong> — Coding, building software, analyzing data, or IT
+                            tools</span>
+                    </label>
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="people">
+                        <span><strong>People & Society</strong> — Teaching, psychology, community service, helping
+                            others</span>
+                    </label>
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="creative">
+                        <span><strong>Creative Fields</strong> — Design, storytelling, media, visual arts,
+                            writing</span>
+                    </label>
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="science">
+                        <span><strong>Science & Environment</strong> — Natural world, health sciences, ecology,
+                            research</span>
+                    </label>
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="business">
+                        <span><strong>Business & Leadership</strong> — Projects, marketing, planning, organizing
+                            teams</span>
+                    </label>
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="practical">
+                        <span><strong>Practical & Skilled Work</strong> — Hands-on making, engineering tech, crafts,
+                            trades</span>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Which problem-solving style feels most natural to you?</legend>
+                    <label class="choice">
+                        <input type="radio" name="strength" value="analytical">
+                        <span><strong>Analytical & Logical</strong> — Looking for patterns, breaking down tough
+                            puzzles</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="strength" value="supportive">
+                        <span><strong>Supportive & Empathetic</strong> — Listening, explaining ideas, lifting up
+                            others</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="strength" value="creative">
+                        <span><strong>Creative & Innovative</strong> — Generating fresh ideas, thinking outside
+                            boundaries</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="strength" value="organised">
+                        <span><strong>Organised & Methodical</strong> — Planning, structuring tasks, keeping everything
+                            on track</span>
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="button primary full">See My Career Ideas <span>→</span></button>
+                <p class="form-hint" style="margin-top: 14px;">Instant results • You can update your choices anytime</p>
+            </form>
+
+            <!-- Results Area -->
+            <div class="results-panel" id="results" hidden></div>
+        </section>
+
+        <!-- Career Clusters Section -->
+        <section class="section" id="careers">
+            <div class="section-heading">
+                <p class="eyebrow">Explore Clusters</p>
+                <h2>Six core career pathways</h2>
+                <p>Every path offers multiple entry points, apprenticeships, and degree options to suit your goals.</p>
+            </div>
+            <div class="career-grid">
+                <div class="career-card">
+                    <div class="career-icon blue">💻</div>
+                    <h3>Technology & Data</h3>
+                    <p>Software development, data science, cybersecurity, systems administration, and AI applications.
+                    </p>
+                    <span>Explore Pathway →</span>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon green">🤝</div>
+                    <h3>People & Society</h3>
+                    <p>Education, public service, counselling, social impact, and community development.</p>
+                    <span>Explore Pathway →</span>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon pink">🎨</div>
+                    <h3>Creative Fields</h3>
+                    <p>Visual arts, content production, digital branding, UX design, and storytelling.</p>
+                    <span>Explore Pathway →</span>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon purple">🔬</div>
+                    <h3>Science & Environment</h3>
+                    <p>Biomedical research, climate science, ecology, health sciences, and renewable energy.</p>
+                    <span>Explore Pathway →</span>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon yellow">📈</div>
+                    <h3>Business & Leadership</h3>
+                    <p>Strategic management, modern finance, entrepreneurship, and operations.</p>
+                    <span>Explore Pathway →</span>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon orange">⚙️</div>
+                    <h3>Practical & Skilled Work</h3>
+                    <p>Precision manufacturing, technical engineering, construction management, and skilled trades.</p>
+                    <span>Explore Pathway →</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Banner -->
+        <section class="school-banner" id="schools">
+            <div>
+                <p class="eyebrow">For Educators & Advisors</p>
+                <h2>Empower students with self-guided career clarity</h2>
+                <p>OyeHoye is built as an open, accessible tool for career advisors, teachers, and parents to facilitate
+                    meaningful conversations about the future.</p>
+            </div>
+            <div class="school-points">
+                <p>✦ Free for classroom and individual student use</p>
+                <p>✦ No logins, tracking, or student personal info collected</p>
+                <p>✦ Printable summaries and discussion starter prompts</p>
+                <a href="#quiz" class="button light">Launch Classroom Session <span>→</span></a>
+                <small>Compatible with all modern browsers and school devices</small>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>OyeHoye Career Navigator</strong> — Helping learners navigate futures with clarity and confidence.
+        </p>
+        <p class="footer-note">Disclaimer: Guidance materials are designed for exploratory and informational purposes.
+            Consult educational counselors and institutional admissions for formal requirements. © 2026 Project OyeHoye.
+        </p>
+    </footer>
+
 </body>
+
 </html>
